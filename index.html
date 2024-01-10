@@ -9,8 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
         <title>Willames Vital - Portólio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav class="nav">
@@ -91,6 +91,7 @@
                       <p class="card__title">Weather App</p>
                       <p class="card__description">Um app web de clima, foi feito usando HTML, CSS e Javascript</p>
                       <a href="https://willamesvital.github.io/weather-app/" class="card-button" target="https://willamesvital.github.io/weather-app/">Saiba Mais</a>
+                      <a href="https://github.com/WillamesVital/weather-app" class="card-button" target="https://github.com/WillamesVital/weather-app">Ver código</a>
                     </div>
                   </div>
                   <div class="card_1">
@@ -124,15 +125,32 @@
                     </div>
                   </div>      
         </section>
+
+      <form class="contact-form" action="https://formsubmit.co/3010fdd13112279527872cf70e21b457" method="POST">
+        <div class="form-group">
+          <label class="form-label" for="name">Nome:</label>
+          <input required="" placeholder="Enter your name" class="form-input" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email:</label>
+          <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Mensagem:</label>
+          <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
+        </div>
+         <button class="form-button" type="submit">Enviar</button>
+          <input type="hidden" name="_subject" value="Enviar outra mensagem!">
+      </form>
+      
+
         <footer class="footer-distributed">
             <div class="footer-left">
-              <h3>Company<span>logo</span></h3>
               <p class="footer-links">
                 <a href="#" class="link-1">Home</a>
                 <a href="#skills">Habilidades</a>
                 <a href="#projects">Projetos</a>
                 <a href="#ebooks">Ebooks</a> 
-                <a href="#">Contact</a>
               </p>
               <p class="footer-company-name">Willames Vital © 2024</p>
             </div>
@@ -152,8 +170,8 @@
             <div class="footer-right">
       
               <p class="footer-company-about">
-                <span>About the company</span>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                <span>Obrigado pela visita!</span>
+                Se quiser saber um pouco mais sobre mim, me segue nas redes abaixo!
               </p>
       
               <div class="footer-icons">
