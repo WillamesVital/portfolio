@@ -8,8 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-        <title>Willames Vital - Portólio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
+        <title>Willames Vital - Portólio</title>
     </head>
     <body>
         <nav class="nav">
@@ -22,8 +23,8 @@
                 <li><a href="#contacts">Contatos</a>
             </ul>
         </nav>
-        <header id="header">
-            <div class="header__left">
+        <section id="about">
+            <div class="about__left">
                 <h1>Olá sou Willames Vital - QA Tester 👋</h1>
                 <p>
                     Olá, sou Willames Vital, natural do sertão de Pernambuco, de uma pequena cidade chamada Petrolândia. Minha trajetória me trouxe até Recife-PE, onde tenho trilhado minha carreira profissional. Iniciei como Barista, adquirindo competências, como a habilidade de preparar café de alta qualidade, oferecer atendimento ao cliente excepcional e realizar um gerenciamento eficiente, incluindo a supervisão das atividades e demandas de uma cafeteria.<br>
@@ -33,12 +34,12 @@
                 </p>
                 <a href="https://drive.google.com/file/d/1nT2udnOhyqIYuoIWxuRCpU8m6XvJGLWl/view?usp=sharing" class="btn btn-download" target="https://drive.google.com/file/d/1nT2udnOhyqIYuoIWxuRCpU8m6XvJGLWl/view?usp=sharing">Meu CV</a>
             </div>
-            <div class="header__rigth">
-                <div class="header__image">
+            <div class="about__rigth">
+                <div class="about__image">
                     <img src="assets/willames.jpg" alt="Willames Vital" class="willames">
                 </div>
             </div>
-        </header>
+        </section>
 
         <section id="skills">
             <div class="skills__content">
@@ -76,7 +77,6 @@
                         <div class="image-container">
                             <img src="assets/zendesk-svgrepo-com.svg" alt="github">
                         </div> 
-
             </div>
         </section>
         <section id="projects">
@@ -90,7 +90,7 @@
                     <div class="card__content">
                       <p class="card__title">Weather App</p>
                       <p class="card__description">Um app web de clima, foi feito usando HTML, CSS e Javascript</p>
-                      <a href="https://github.com/WillamesVital/weather-app" class="card-button" target="https://github.com/WillamesVital/weather-app">Saiba Mais</a>
+                      <a href="https://willamesvital.github.io/weather-app/" class="card-button" target="https://willamesvital.github.io/weather-app/">Saiba Mais</a>
                     </div>
                   </div>
                   <div class="card_1">
@@ -124,10 +124,72 @@
                     </div>
                   </div>      
         </section>
-                  
-
-
-        <footer></footer>
+        <section class="form-container">
+            <div class="container">
+                <form method="post" action="envia.php">
+                    <h1>Entre em contato</h1>
+                    <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+                    <div class="input-single">
+                        <input class="input" type="text" id="nome" name="nome" required>
+                        <label for="nome">Seu nome completo</label>
+                    </div>
+                    <div class="input-single">
+                        <input class="input" type="text" id="email" name="email" required>
+                        <label for="email">Seu e-mail</label>
+                    </div>
+                    <div class="text-area">
+                        <textarea id="mensagem" name="mensagem">Sua mensagem aqui!</textarea>
+                    </div>
+                    <div class="input-single">
+                        <input class="input" type="text" id="telefone" name="telefone" required>
+                        <label for="telefone">Seu telefone</label>
+                    </div>
+                    <div class="btn"><input type="submit" value="Enviar"></div>
+                </form>
+            </div><!--container-->
+        </section>
         <script src="index.js"></script>
+        <footer class="footer-distributed">
+            <div class="footer-left">
+              <h3>Company<span>logo</span></h3>
+              <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Projetos</a>
+                <a href="#ebooks">Ebooks</a> 
+                <a href="#">Contact</a>
+              </p>
+              <p class="footer-company-name">Willames Vital © 2024</p>
+            </div>
+            <div class="footer-center">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Recife - PE</span>Brasil</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:willamescfvital@gmail.com">willamescfvital@gmail.com</a></p>
+              </div>
+      
+            </div>
+      
+            <div class="footer-right">
+      
+              <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+              </p>
+      
+              <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/willames-vital/" target="https://www.linkedin.com/in/willames-vital/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/willames.vital/" target="https://www.instagram.com/willames.vital/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://github.com/WillamesVital" target="https://github.com/WillamesVital"><i class="fa-brands fa-square-github"></i></a>
+      
+              </div>
+      
+            </div>
+      
+          </footer>
     </body>
 </html>
